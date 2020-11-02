@@ -92,25 +92,6 @@
       <div id="amarillo" class="color amarillo right" data-color="amarillo"></div>
       <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
     </div>
-    <script>
-        const celeste    = document.getElementById('celeste');
-        const rojo       = document.getElementById('rojo');
-        const naranja    = document.getElementById('naranja');
-        const amarillo   = document.getElementById('amararillo');
-        const btnEmpezar = document.getElementById('btnEmpezar');
-
-        class Juego{
-            constructor(){
-                this.inicializar();
-            }
-
-            inicializar(){
-                btnEmpezar.classList.add('hide');
-            }
-        }
-        function empezarJuego(){
-            var juego = new Juego();
-        }
-    </script>
+    <script src="proyecto.js"></script>
   </body>
 </html>
