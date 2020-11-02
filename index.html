@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Dice</title>
+    <style>
+      body {
+        margin: 0;
+        background: rgba(255,255,255,0.2);
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .gameboard {
+        height: 100vh;
+        width: 100vh;
+        border-radius: 20%;
+        overflow: hidden;
+        margin: auto auto;
+        max-height: 60vh;
+        max-width: 60vh;
+      }
+
+      .color {
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: left;
+      }
+
+      .celeste {
+        background: #22a6b3;
+      }
+
+      .celeste.light {
+        background: #7ed6df;
+      }
+
+      .rojo {
+        background: #C83232;
+      }
+
+      .rojo.light {
+        background: #FA0303;
+      }
+
+      .naranja {
+        background: #f0932b;
+      }
+
+      .naranja.light {
+        background: #ffbe76;
+      }
+
+      .amarillo {
+        background: #D8CE05;
+      }
+
+      .amarillo.light {
+        background: #FFF404;
+      }
+
+      .btn-start {
+        width: 400px;
+        height: 100px;
+        background: #ecf0f1;
+        color: #2c3e50;
+        font-size: 2.5rem;
+        position: absolute;
+        top: calc(50% - 50px);
+        left: calc(50% - 200px);
+      }
+
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gameboard">
+      <div id="celeste" class="color celeste left" data-color="celeste"></div>
+      <div id="rojo" class="color rojo right" data-color="rojo"></div>
+      <div id="naranja" class="color naranja left" data-color="naranja"></div>
+      <div id="amarillo" class="color amarillo right" data-color="amarillo"></div>
+      <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+    </div>
+    <script>
+        const celeste    = document.getElementById('celeste');
+        const rojo       = document.getElementById('rojo');
+        const naranja    = document.getElementById('naranja');
+        const amarillo   = document.getElementById('amararillo');
+        const btnEmpezar = document.getElementById('btnEmpezar');
+
+        class Juego{
+            constructor(){
+                this.inicializar();
+            }
+
+            inicializar(){
+                btnEmpezar.classList.add('hide');
+            }
+        }
+        function empezarJuego(){
+            var juego = new Juego();
+        }
+    </script>
+  </body>
+</html>
