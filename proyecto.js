@@ -3,7 +3,7 @@ const rojo = document.getElementById('rojo');
 const naranja = document.getElementById('naranja');
 const amarillo = document.getElementById('amarillo');
 const btnEmpezar = document.getElementById('btnEmpezar');
-const ULTIMO_NIVEL = 10;
+const ULTIMO_NIVEL = 1;
 
 class Juego {
     constructor() {
@@ -118,7 +118,7 @@ class Juego {
                 }
             }
         }else{
-            this.perdioElJuego()
+            this.perdioElJuego();
         }
     }
 
@@ -131,7 +131,7 @@ class Juego {
         swal("Platzi", "Lo lamentamos, perdiste el juego", "error")
         .then(()=>{
             this.eliminarEventosClick();
-            this.inicializar;
+            this.inicializar();
         })
     }
 }
