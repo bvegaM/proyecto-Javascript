@@ -3,7 +3,7 @@ const rojo = document.getElementById('rojo');
 const naranja = document.getElementById('naranja');
 const amarillo = document.getElementById('amarillo');
 const btnEmpezar = document.getElementById('btnEmpezar');
-const ULTIMO_NIVEL = 1;
+const ULTIMO_NIVEL = 10;
 
 class Juego {
     constructor() {
